@@ -138,6 +138,11 @@ Edge.registry.register('tree-edge', TreeEdge, true)
 // 初始化画布
 const graph = new Graph({
   container: document.getElementById('container')!,
+  interacting: {
+    InteractionMap: {
+      nodeMovable: true,
+    },
+  },
   async: true,
   frozen: true,
   scroller: true,
